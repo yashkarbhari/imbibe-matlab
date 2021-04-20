@@ -1,0 +1,91 @@
+-------BUILT-IN FUNCTIONS-------
+
+- sin, cos, tan, eye, zeros, ones, sqrt, exp, log
+- pi, i (complex no)
+
+-------ARITHMETIC-------
+
+- A + B, A - B
+- A * B, A / B, A.*B (elementwise)
+
+-------SYNTAX-------
+
+- vector : v = [1 2 3]
+- matrix : A = [1 2; 3 4]
+- transpose matrix : v'
+- Tensor : T = [A; A; A] (or) [[[1 2]; [3 4]; [5 6]; [7 8]];]
+- To extract a value from a matrix : A(1, 1) ------ans: 1
+                                     A(1, 2) ------ans: 2
+- End with semicolon(;) for not showing the output
+- To show the complete matrix size : size(A)
+- ~ is used for negation
+
+
+-------FOR FUNCTION CREATION-------
+
+- the file name should be same as the function name
+function syntax: function [output] = input ()
+        
+                 end
+
+-------STRUCTS-------
+
+- add fields : using 'struct-name.(field-name)'
+- isfield() : to check if a field is there in the struct
+- rmfield() : to remove a field from the struct.
+-setfield() : to set a field with a value
+
+-------POINTS-------
+
+- det(A) : gives determinant of the matrix
+- A\b : is equal to inv(A)*b used in linear equations
+- eig(A) : gives eigen value of a matrix
+- [V, D] = eig(A) : gives eigen values and eigen vectors both
+- norm(A - b) : ||A - b||
+- whos : Yes, it is whos. It is used for looking at all the variables and some of there functions
+         variables and see some stuff about it.
+- plot(x, y) : to plot a graph (the size of both x and y should be equal)
+- subplot(x, y, z) : x(no. of rows), y(no. of columns), z(which subplot you are about to plot)
+- linspace(x, y, z) : x(starting point), y(ending point), z(no. of points in between)
+- openfig() : to open an existing figure 
+- bar(x, y) : gives a bar chart
+- hist(x, y) : gives a histogram(x-data, y-no. of channels)
+- scatter(x, y) : gives scatterplot
+- csvread('filename') : to read the csv file
+- csvwrite('filename', variable) : to write the csv file
+- save('') & load('') : for saving an loading your workspace
+- surf() : for 3D plots
+- contour() : 2D visualization of the data
+- title('') : title for the plot
+- xlabel(''), ylabel('') : labels for the plot
+
+-------For Audio Processing-------
+
+- audioread('') : to read a .wav or .mp3 format file for sound
+- audiowrite('filename', 'data', 'sampling rate') : to save a sound file
+- sound(d, fs) : d(sample data), fs(sample rate for that data)
+- downsample(d, integer no.) : interger no.(how much you want to downsample)
+- fft() : Fast Fourier Transform of the variable
+- spectrogram(data, window_size) : another name for spectogram is short-time Fourier Transform
+
+-------For Image Processing-------
+- imread('') : to read the image
+- imshow('') : to show the image
+- flipud('') : to flip the image upside-down
+- fliplr('') : to flip the image horizontally(left-right)
+- fspecial(type, parameter) : it has all different types of filters
+- edge() : to show all the edges of the image
+
+-------For Probability-------
+
+- randi(imax) : gives a randomly distributed variable between 1 and imax
+- randi(imax, n) : gives a n x n matrix with random values between 1 and imax
+- mean() : to calculate the mean
+- var() : to calculate the spread of the data or variance
+- [h, p] = jbtest() : Jarque-Bera test returns a hypothesis test and a p-value
+- [h, p] = kstest() : Kolmogorov-Smrinov test is basically the same as jbtest()
+- [h, p] = ttest2(R1, R2) : two sample t-test compares the two distributions(R1 and R2) and outputs h and p 
+- cov() : covariance matrix
+- 
+- A REPORT ON AGI AND DEFINING ITS CURRENT FAULTS.
+
