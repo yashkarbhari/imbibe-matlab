@@ -86,6 +86,3 @@ function syntax: function [output] = input ()
 - [h, p] = kstest() : Kolmogorov-Smrinov test is basically the same as jbtest()
 - [h, p] = ttest2(R1, R2) : two sample t-test compares the two distributions(R1 and R2) and outputs h and p 
 - cov() : covariance matrix
-- 
-- A REPORT ON AGI AND DEFINING ITS CURRENT FAULTS.
-
