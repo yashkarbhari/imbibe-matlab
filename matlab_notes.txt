@@ -85,4 +85,4 @@ function syntax: function [output] = input ()
 - [h, p] = jbtest() : Jarque-Bera test returns a hypothesis test and a p-value
 - [h, p] = kstest() : Kolmogorov-Smrinov test is basically the same as jbtest()
 - [h, p] = ttest2(R1, R2) : two sample t-test compares the two distributions(R1 and R2) and outputs h and p 
-- cov() : covariance matrix
+- cov() : covariance matri
