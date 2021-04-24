@@ -86,3 +86,9 @@ function syntax: function [output] = input ()
 - [h, p] = kstest() : Kolmogorov-Smrinov test is basically the same as jbtest()
 - [h, p] = ttest2(R1, R2) : two sample t-test compares the two distributions(R1 and R2) and outputs h and p 
 - cov() : covariance matrix
+
+------- ADVANCED SYNTAX-------
+
+- %% : Denotes a new section, when you run and advance it will run the current section and advance to the next section of the code.
+- 
+
